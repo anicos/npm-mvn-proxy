@@ -30,6 +30,20 @@ class MetadataCreatorSpec extends Specification {
         convertToJsonSlurper(result) == convertToJsonSlurper(afterPublishingNode)
     }
 
+    def "should create correct json before publish with readme"() {
+        given:
+        def jsonAfterPublishing = getFileFromResources('jsonAfterFirstPublish.json');
+        def jsonFromNpm = getFileFromResources('jsonFromNpmInFirstPublish_withReadme.json');
+
+        JsonNode afterPublishingNode = objectMapper.readTree(jsonAfterPublishing);
+        JsonNode fromNpmNode = objectMapper.readTree(jsonFromNpm);
+
+        when:
+        JsonNode result = testObj.create(fromNpmNode);
+        then:
+        convertToJsonSlurper(result) == convertToJsonSlurper(afterPublishingNode)
+    }
+
     private Object convertToJsonSlurper(ObjectNode result) {
         new JsonSlurper().parseText(objectMapper.writeValueAsString(result))
     }

@@ -1,0 +1,95 @@
+{
+  "_id": "anicosnpm",
+  "name": "anicosnpm",
+  "description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+  "dist-tags": {
+    "latest": "1.12.0"
+  },
+  "versions": {
+    "1.12.0": {
+      "name": "anicosnpm",
+      "title": "jQuery UI",
+      "package": "sss",
+      "description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+      "version": "1.12.0",
+      "homepage": "http://jqueryui.com",
+      "author": {
+        "name": "jQuery Foundation and other contributors",
+        "url": "https://github.com/jquery/jquery-ui/blob/1.12.0/AUTHORS.txt"
+      },
+      "main": "ui/widget.js",
+      "maintainers": [
+        {
+          "name": "anicos",
+          "email": "adrian.nicos@gmail.com"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/jquery/jquery-ui.git"
+      },
+      "bugs": {
+        "url": "https://bugs.jqueryui.com/"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "grunt"
+      },
+      "dependencies": {},
+      "devDependencies": {
+        "commitplease": "2.3.0",
+        "grunt": "0.4.5",
+        "grunt-bowercopy": "1.2.4",
+        "grunt-cli": "0.1.13",
+        "grunt-compare-size": "0.4.0",
+        "grunt-contrib-concat": "0.5.1",
+        "grunt-contrib-csslint": "0.5.0",
+        "grunt-contrib-jshint": "0.12.0",
+        "grunt-contrib-qunit": "1.0.1",
+        "grunt-contrib-requirejs": "0.4.4",
+        "grunt-contrib-uglify": "0.11.1",
+        "grunt-git-authors": "3.1.0",
+        "grunt-html": "6.0.0",
+        "grunt-jscs": "2.1.0",
+        "load-grunt-tasks": "3.4.0",
+        "rimraf": "2.5.1",
+        "testswarm": "1.1.0"
+      },
+      "keywords": [],
+      "gitHead": "43e468279cad9a947c09dd46e6d3f61480788f43",
+      "_id": "anicosnpm@1.12.0",
+      "_shasum": "c003d989c8725be34ff4ecae57fec9e351f1f245",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_nodeVersion": "0.12.7",
+      "_npmUser": {
+        "name": "anicos",
+        "email": "adrian.nicos@gmail.com"
+      },
+      "dist": {
+        "shasum": "c003d989c8725be34ff4ecae57fec9e351f1f245",
+        "tarball": "http://localhost:8080/anicosnpm/-/anicosnpm-1.12.0.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/jquery-ui-1.12.0.tgz_1467998093399_0.7568552363663912"
+      },
+      "directories": {},
+      "_resolved": "https://registry.npmjs.org/jquery-ui/-/jquery-ui-1.12.0.tgz",
+      "readme": "ERROR: No README data found!"
+    }
+  },
+  "readme": "ERROR: No README data found!",
+  "maintainers": [
+    {
+      "name": "anicos",
+      "email": "adrian.nicos@gmail.com"
+    }
+  ],
+  "_attachments": {
+    "anicosnpm-1.12.0.tgz": {
+      "data": "sas",
+      "length": 1213
+    }
+  }
+}

@@ -1,0 +1,4 @@
+build
+.idea
+npm-mvn-proxy.iml
+.gradle

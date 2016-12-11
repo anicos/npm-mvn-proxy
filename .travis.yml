@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - oraclejdk8
+before_script:
+  chmod 777 gradlew
+script:
+  ./gradlew clean build checkCoverage
+deploy:
+  provider: releases
+  api_key: "$GIT_HUB"
+  file: "build/libs/npm-mvn-proxy.jar"
+  skip_cleanup: true
+  on:
+    tags: true

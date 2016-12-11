@@ -1,0 +1,9 @@
+{
+  "name": "user",
+  "password": "pass",
+  "email": "adrian.nicos@gmail.com",
+  "_id": "org.couchdb.user:user",
+  "type": "user",
+  "roles": [],
+  "date": "2016-10-01T23:15:01.721Z"
+}

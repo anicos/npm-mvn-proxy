@@ -1,0 +1,73 @@
+{
+  "_id": "anicosnpm3",
+  "_rev": "2-693d3a82a0499ca4a168c691b321e05c",
+  "name": "anicosnpm3",
+  "dist-tags": {
+    "latest": "1.0.2"
+  },
+  "versions": {
+    "1.0.1": {
+      "name": "anicosnpm3",
+      "version": "1.0.1",
+      "_id": "anicosnpm3@1.0.1",
+      "scripts": {},
+      "_shasum": "11552f9a398a9d6bed195e24d58b35ca9e793cb8",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "anicos",
+        "email": "adrian.nicos@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "anicos",
+          "email": "adrian.nicos@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "11552f9a398a9d6bed195e24d58b35ca9e793cb8",
+        "tarball": "https://registry.npmjs.org/anicosnpm3/1.0.1/anicosnpm3-1.0.1.tgz"
+      },
+      "directories": {}
+    },
+    "1.0.2": {
+      "name": "anicosnpm3",
+      "version": "1.0.2",
+      "_id": "anicosnpm3@1.0.2",
+      "scripts": {},
+      "_shasum": "e4295e97add6515b34658d43b1e8db43c4340731",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_npmUser": {
+        "name": "anicos",
+        "email": "adrian.nicos@gmail.com"
+      },
+      "maintainers": [
+        {
+          "name": "anicos",
+          "email": "adrian.nicos@gmail.com"
+        }
+      ],
+      "dist": {
+        "shasum": "e4295e97add6515b34658d43b1e8db43c4340731",
+        "tarball": "http://registry.npmjs.org/anicosnpm3/1.0.2/anicosnpm3-1.0.2.tgz"
+      },
+      "directories": {}
+    }
+  },
+  "readme": "ERROR: No README data found!",
+  "maintainers": [
+    {
+      "name": "anicos",
+      "email": "adrian.nicos@gmail.com"
+    }
+  ],
+  "time": {
+    "modified": "2016-09-06T22:57:02.844Z",
+    "created": "2016-09-06T20:50:49.037Z",
+    "1.0.1": "2016-09-06T20:50:49.037Z",
+    "1.0.2": "2016-09-06T22:57:02.844Z"
+  },
+  "readmeFilename": "",
+  "_attachments": {}
+}

@@ -1,0 +1,96 @@
+{
+  "_id": "anicosnpm",
+  "name": "anicosnpm",
+  "description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+  "dist-tags": {
+    "latest": "1.12.0"
+  },
+  "versions": {
+    "1.12.0": {
+      "name": "anicosnpm",
+      "title": "jQuery UI",
+      "package": "sss",
+      "description": "A curated set of user interface interactions, effects, widgets, and themes built on top of the jQuery JavaScript Library.",
+      "version": "1.12.0",
+      "homepage": "http://jqueryui.com",
+      "author": {
+        "name": "jQuery Foundation and other contributors",
+        "url": "https://github.com/jquery/jquery-ui/blob/1.12.0/AUTHORS.txt"
+      },
+      "main": "ui/widget.js",
+      "maintainers": [
+        {
+          "name": "anicos",
+          "email": "adrian.nicos@gmail.com"
+        }
+      ],
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/jquery/jquery-ui.git"
+      },
+      "bugs": {
+        "url": "https://bugs.jqueryui.com/"
+      },
+      "license": "MIT",
+      "scripts": {
+        "test": "grunt"
+      },
+      "dependencies": {},
+      "devDependencies": {
+        "commitplease": "2.3.0",
+        "grunt": "0.4.5",
+        "grunt-bowercopy": "1.2.4",
+        "grunt-cli": "0.1.13",
+        "grunt-compare-size": "0.4.0",
+        "grunt-contrib-concat": "0.5.1",
+        "grunt-contrib-csslint": "0.5.0",
+        "grunt-contrib-jshint": "0.12.0",
+        "grunt-contrib-qunit": "1.0.1",
+        "grunt-contrib-requirejs": "0.4.4",
+        "grunt-contrib-uglify": "0.11.1",
+        "grunt-git-authors": "3.1.0",
+        "grunt-html": "6.0.0",
+        "grunt-jscs": "2.1.0",
+        "load-grunt-tasks": "3.4.0",
+        "rimraf": "2.5.1",
+        "testswarm": "1.1.0"
+      },
+      "keywords": [],
+      "gitHead": "43e468279cad9a947c09dd46e6d3f61480788f43",
+      "_id": "anicosnpm@1.12.0",
+      "_shasum": "c003d989c8725be34ff4ecae57fec9e351f1f245",
+      "_from": ".",
+      "_npmVersion": "1.4.28",
+      "_nodeVersion": "0.12.7",
+      "_npmUser": {
+        "name": "anicos",
+        "email": "adrian.nicos@gmail.com"
+      },
+      "dist": {
+        "shasum": "c003d989c8725be34ff4ecae57fec9e351f1f245",
+        "tarball": "http://localhost:8080/anicosnpm/-/anicosnpm-1.12.0.tgz"
+      },
+      "_npmOperationalInternal": {
+        "host": "packages-12-west.internal.npmjs.com",
+        "tmp": "tmp/jquery-ui-1.12.0.tgz_1467998093399_0.7568552363663912"
+      },
+      "directories": {},
+      "_resolved": "https://registry.npmjs.org/jquery-ui/-/jquery-ui-1.12.0.tgz",
+      "readme": "ERROR: No README data found!"
+    }
+  },
+  "readme": "ERROR: No README data found!",
+  "maintainers": [
+    {
+      "name": "anicos",
+      "email": "adrian.nicos@gmail.com"
+    }
+  ],
+  "_attachments": {
+    "anicosnpm-1.12.0.tgz": {
+      "content_type": "application/octet-stream",
+      "data": "H4sIAAAAAAAAA+1Y3VMbNxDPM3+Feg95wuf7Ph9PYRo6odOUKYS+NC0j361tmfPpkHQG0+F/7+ok22djSNoEMp2wM6BD+/WTVtpdUdP8ko6hX5vRnUpevfrK5HleEkUERz+Nve6oKYo85PlBGqVBFPt++srzQy8Mkf+1geyiRioqEMqX2jGLIavxf0J/7xHiVHQGzgFxaMVyLqt65uzracVU2c5Pf2tALMj5sZm3Z8U5cKSUZqoAmQtWK8YrrXBI8kZQBQWRoAgfkUaCIKxSIEY0B/NFcy0u9wmMRpAr/LhmxRj0B60KoiYwA0mGDSvRREUUr7UlnCYWz890Ts9at+QXNhRULFyDZg5CWiS+6weuZ6YnfAZ1Cxy/laoP+v3plbbUMDfndtG0URMuUETvTGdvrM+feFMVVANvQXKEI0jOKyXYsFFcmP1AvUaUSz8SHY2ZmjRD7cb6tEOvYf1hyYd9A7R/eP7h3cnpmatulIOG7lpMM8raxaCs2SK8ps6Ko/AHF4wCf7SuDfAO9ALmvBrzOShl0SETULXc4r4Z68l2L1qxu/3dBqe3VMdMgNhhb8pBVO5K4nNtypwr5Y55dUtLuN1hd1Pgnln8/We7JQJqLhmGYrEOolrUrROMwlZ8cObx6LhaZxWJYTOWa7NbMdZMt3ui+mvFkuVQyRbE++MPJnjmynTsKZCqBSWaquO0gBqqAqqcQSu8nJ2/3WIYK+h4xlRdAjX+Aje0N4AsTeOs50ZuvDHbG/JrEDmvF+biBG60yc9LZjTxrIZbLD6rqYCeZLewtO5ti7SXRI85tRBi139ASMqSVSupB0xN5WQltLrm96SumoopsyTvIX8CrhomYCqX4LeXbuWacclGC+vR37aGR6Vn8kdrJ8SN2sI0UbP2yCQIZYs1lbk04epolZwWPcNXVF5as529FWwm6MjodXZTnyR5TcXM5kBUWB2nS1hcc1G0CcNcGcT9DmihZaMQomQQpFlOi4xmUZp7WVFECSRFOEr8aOClg8EoMuF3LlirtLosb7rp9kJOqGxaBHGWJ16Y0qDI8jiFjAZx4NNsmNIoS30/KSJ/GAVRYhVHgs827f61YRgr1O/rFB/oSCwBVbyADq89F+la7Rzr0I7cvp3PPjOb2YvI2ltrbf7HReuYUTGk5UZGETBG41jXEPpUulyMO2Wjt/7ume1x52tUerUnNVZZXatoeawrLo5roBNuko2t5rLnB71rPDYus6LW6bIyaoSzWmvgcN+1Gt9e+FGSZtnAy8Iwyy48N42TQRwHYRImSZj5QXfPBJZ8LjYy2oUAycs5FF+yBYjDsXWAFia8R6enJ6cH5FdOTo8O374/IljAKRnpSv6Ds3e39617sG9JNvp9hnXkBtuKp/DxeP9v2mXd/yeBn/ihj/0/fqQv/f9z0DL+Oon1dTf5BGfgX8U/8HT80yh+if9zUL3x/qdP8g+AT8Q/8gIb/yiNwljHP/RT7yX+z0GPvf83ntG639351l8/RPVfyzryiRcO5BNOPjpHQnBxQCpONIPIGnI2YlB8dMjr1wRumCL+umlYPc2tz86b6vjsxyW4XU+iVZegZZe9pLb7nVf/F3qhF/qe6R/D1pEMABgAAA==",
+      "length": 1213
+    }
+  }
+}

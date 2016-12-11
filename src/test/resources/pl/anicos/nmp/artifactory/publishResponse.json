@@ -1,0 +1,16 @@
+{
+  "repo": "libs-release-local",
+  "path": "/npm/anicosnpm/1.0/anicosnpm-1.0.tgz",
+  "created": "2016-08-09T21:24:16.002Z",
+  "createdBy": "build",
+  "downloadUri": "http://maven.ydp.eu/artifactory/libs-release-local/npm/anicosnpm/1.0/anicosnpm-1.0.tgz",
+  "mimeType": "application/x-gzip",
+  "size": "328",
+  "checksums": {
+    "sha1": "a54154d1e192455ccffef195538326afa891e73a",
+    "md5": "6e32fb40c18ed5126240b89c50af2eb6"
+  },
+  "originalChecksums": {
+  },
+  "uri": "http://maven.ydp.eu/artifactory/libs-release-local/npm/anicosnpm/1.0/anicosnpm-1.0.tgz"
+}

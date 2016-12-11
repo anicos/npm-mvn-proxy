@@ -32,7 +32,7 @@ class MetadataCreatorSpec extends Specification {
 
     def "should create correct json before publish with readme"() {
         given:
-        def jsonAfterPublishing = getFileFromResources('jsonAfterFirstPublish.json');
+        def jsonAfterPublishing = getFileFromResources('jsonAfterFirstPublish_withReadme.json');
         def jsonFromNpm = getFileFromResources('jsonFromNpmInFirstPublish_withReadme.json');
 
         JsonNode afterPublishingNode = objectMapper.readTree(jsonAfterPublishing);

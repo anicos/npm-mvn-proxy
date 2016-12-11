@@ -59,7 +59,9 @@ jacocoTestReport {
     reports {
         xml {
             enabled true
-            destination = new File("${buildDir}/reports/jacoco/test/jacocoTestReport.xml")
+        }
+        html {
+            enabled true
         }
     }
 }

@@ -8,6 +8,7 @@
     "1.0.1": {
       "name": "anicosnpm3",
       "version": "1.0.1",
+      "readme": "Not empty",
       "_id": "anicosnpm3@1.0.1",
       "scripts": {},
       "_shasum": "11552f9a398a9d6bed195e24d58b35ca9e793cb8",
@@ -30,7 +31,7 @@
       "directories": {}
     }
   },
-  "readme": "ReadmeFile is ok",
+  "readme": "ERROR: No README data found!",
   "maintainers": [
     {
       "name": "anicos",

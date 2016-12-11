@@ -1,6 +1,5 @@
 {
   "_id": "anicosnpm3",
-  "_rev": "1-1cac3235e241ed775464a23a5f91cd58",
   "name": "anicosnpm3",
   "dist-tags": {
     "latest": "1.0.1"
@@ -9,7 +8,6 @@
     "1.0.1": {
       "name": "anicosnpm3",
       "version": "1.0.1",
-      "readme": "Not empty",
       "_id": "anicosnpm3@1.0.1",
       "scripts": {},
       "_shasum": "11552f9a398a9d6bed195e24d58b35ca9e793cb8",
@@ -27,7 +25,7 @@
       ],
       "dist": {
         "shasum": "11552f9a398a9d6bed195e24d58b35ca9e793cb8",
-        "tarball": "https://registry.npmjs.org/anicosnpm3/1.0.1/anicosnpm3-1.0.1.tgz"
+        "tarball": "https://registry.npmjs.org/anicosnpm3/-/anicosnpm3-1.0.1.tgz"
       },
       "directories": {}
     }
@@ -39,11 +37,12 @@
       "email": "adrian.nicos@gmail.com"
     }
   ],
-  "time": {
-    "modified": "2016-09-06T20:50:49.037Z",
-    "created": "2016-09-06T20:50:49.037Z",
-    "1.0.1": "2016-09-06T20:50:49.037Z"
-  },
   "readmeFilename": "",
-  "_attachments": {}
+  "_attachments": {
+    "anicosnpm3-1.0.1.tgz": {
+      "content_type": "application/octet-stream",
+      "data": "H4sIAAAAAAAAA+2T0QrCIBSGvfYpxOvYztFNobeRJWExN2ZFEL172iK6CLrIEYHfzQ8qx/9cfKPp9mZr63HOahcGTzIDAKppWEzULbzmjEJGUGgllWi1RgIoQab3uYu84xgOZopVvp0zr8Ke+SdcKGPcm97yNePGu24IfuwlX6Xzk52CG3y6wgoq5PRKf124kJWH97XzG3uO9i/xxyf/ky53/1GglCL6L1AV/wuFQmFRbi0Uon0ACgAA",
+      "length": 186
+    }
+  }
 }

@@ -31,7 +31,7 @@ targetCompatibility = 1.8
 
 test.maxParallelForks = 4
 
-def expectedCoverageLevel = 99
+def expectedCoverageLevel = 99.8
 
 repositories {
     mavenCentral()

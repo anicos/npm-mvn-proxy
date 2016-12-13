@@ -4,7 +4,9 @@ jdk:
 before_script:
   chmod 777 gradlew
 script:
-  ./gradlew clean build checkCoverage
+  ./gradlew clean build checkCoverage --debug
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: releases
   api_key: "$GIT_HUB"

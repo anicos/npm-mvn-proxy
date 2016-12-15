@@ -22,7 +22,6 @@ public class NpmPublishBody {
     @Valid
     private final Map<String, Attachment> attachments;
 
-    @Valid
     @JsonCreator
     public NpmPublishBody(@JsonProperty("_id") String id, @JsonProperty("dist-tags") DistTags distTags, @JsonProperty("_attachments") Map<String, Attachment> attachments) {
         this.id = id;

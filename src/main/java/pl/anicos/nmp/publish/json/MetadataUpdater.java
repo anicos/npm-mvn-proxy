@@ -30,12 +30,12 @@ public class MetadataUpdater {
         metadataJsonUtil.updateLatestTarball(fromNpm);
 
         fillTimeSection(fromNpm, fromArtifactory, lastVersion);
-        fillVersionSection(fromNpm, fromArtifactory, lastVersion);
+        fillVersionSection(fromNpm, fromArtifactory);
 
         return fromNpm;
     }
 
-    private void fillVersionSection(ObjectNode fromNpm, ObjectNode fromArtifactory, String lastVersion) {
+    private void fillVersionSection(ObjectNode fromNpm, ObjectNode fromArtifactory) {
         JsonNode versionsFromArifatory = fromArtifactory.get(MetadataJsonUtil.VERSIONS);
         ObjectNode versionsFromNpm = (ObjectNode) fromNpm.get(MetadataJsonUtil.VERSIONS);
 

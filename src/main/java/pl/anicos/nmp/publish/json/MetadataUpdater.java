@@ -24,15 +24,15 @@ public class MetadataUpdater {
 
     public ObjectNode update(ObjectNode fromNpm, ObjectNode fromArtifactory) {
 
-        fromNpm = metadataJsonUtil.initDefaultValues(fromNpm);
-        String lastVersion = metadataJsonUtil.getLastVersion(fromNpm);
+        ObjectNode updatedNode = metadataJsonUtil.initDefaultValues(fromNpm);
+        String lastVersion = metadataJsonUtil.getLastVersion(updatedNode);
         logger.info("Update existing metadata.json - adding new version " + lastVersion);
-        metadataJsonUtil.updateLatestTarball(fromNpm);
+        metadataJsonUtil.updateLatestTarball(updatedNode);
 
-        fillTimeSection(fromNpm, fromArtifactory, lastVersion);
-        fillVersionSection(fromNpm, fromArtifactory);
+        fillTimeSection(updatedNode, fromArtifactory, lastVersion);
+        fillVersionSection(updatedNode, fromArtifactory);
 
-        return fromNpm;
+        return updatedNode;
     }
 
     private void fillVersionSection(ObjectNode fromNpm, ObjectNode fromArtifactory) {

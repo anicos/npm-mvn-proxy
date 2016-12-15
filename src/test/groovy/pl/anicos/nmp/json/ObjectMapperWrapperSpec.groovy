@@ -20,7 +20,7 @@ class ObjectMapperWrapperSpec extends Specification {
         when:
         testObj.treeToValue(jsonNodes, String)
         then:
-        RuntimeException exception = thrown();
+        JsonProcessingRuntimeException exception = thrown();
         exception.cause instanceof JsonProcessingException
     }
 
@@ -31,7 +31,7 @@ class ObjectMapperWrapperSpec extends Specification {
         when:
         testObj.writeValueAsBytes(jsonNodes,)
         then:
-        RuntimeException exception = thrown();
+        JsonProcessingRuntimeException exception = thrown();
         exception.cause instanceof JsonProcessingException
     }
 }

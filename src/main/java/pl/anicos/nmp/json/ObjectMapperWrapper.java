@@ -19,7 +19,7 @@ public class ObjectMapperWrapper {
         try {
             return objectMapper.treeToValue(jsonNodes, clazz);
         } catch (JsonProcessingException e) {
-            throw new RuntimeException("Can't parse bode of response", e);
+            throw new JsonProcessingRuntimeException("Can't parse bode of response", e);
         }
     }
 
@@ -27,7 +27,7 @@ public class ObjectMapperWrapper {
         try {
             return objectMapper.writeValueAsBytes(newJson);
         } catch (JsonProcessingException e) {
-            throw new RuntimeException("Can't createArtifactoryLocation json binary from object", e);
+            throw new JsonProcessingRuntimeException("Can't createArtifactoryLocation json binary from object", e);
         }
     }
 }

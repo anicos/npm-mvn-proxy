@@ -53,7 +53,7 @@ public class DownloadJsonController {
             return objectNodeResponseEntity.get().getBody();
         }
 
-        logger.info("Artifact does not exist in artifatory " + artifactoryLocation.getUrl() + "and npm " + urlToNpm);
+        logger.info("Artifact does not exist in artifatory " + artifactoryLocation.getUrl() + " and npm " + urlToNpm);
         throw new NotExistException(artifactoryLocation.getUrl() + " Doesn't exist");
     }
 }

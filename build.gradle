@@ -29,7 +29,7 @@ jar {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-test.maxParallelForks = 4
+//test.maxParallelForks = 4
 
 def expectedCoverageLevel = 99.8
 

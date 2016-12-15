@@ -18,7 +18,6 @@ import pl.anicos.nmp.configuration.ApplicationProperties;
 import pl.anicos.nmp.download.NpmUrlProvider;
 import pl.anicos.nmp.publish.json.ArtifactoryJsonLocationCreator;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Optional;
 
 @RestController
@@ -40,7 +39,7 @@ public class DownloadBinaryController {
     }
 
     @RequestMapping(value = "/{id}/{version}/{nameBinary:.+}", method = RequestMethod.GET)
-    public HttpEntity<byte[]> downloadBinary(@PathVariable String id, @PathVariable String nameBinary, @PathVariable String version, @RequestHeader("Authorization") String authorizationHeader, HttpServletRequest request) {
+    public HttpEntity<byte[]> downloadBinary(@PathVariable String id, @PathVariable String nameBinary, @PathVariable String version, @RequestHeader("Authorization") String authorizationHeader) {
 
         String urlToArtifact = artifactoryUrlProvider.getUrlToAtrtifact(id, nameBinary, version);
 

@@ -29,7 +29,7 @@ class DownloadBinaryContollerSpec extends Specification {
     @LocalServerPort
     int randomServerPort;
 
-    def "Index json exist in atrifactory"() {
+    def "should return binary from artifactory"() {
         given:
         def array = [0, 0, 0, 0, 0] as byte[]
         stubFor(get(urlEqualTo("/npmfolder/anicosnpm3/1.0.1/anicosnpm3-1.0.1.tgz"))
@@ -50,7 +50,7 @@ class DownloadBinaryContollerSpec extends Specification {
         verify(getRequestedFor(urlEqualTo("/npmfolder/anicosnpm3/1.0.1/anicosnpm3-1.0.1.tgz")).withBasicAuth(TestCredentialsProvider.BASIC_CREDENTIALS))
     }
 
-    def "Not exist binary in atrifactory"() {
+    def "shouldn't return binary from npm"() {
         given:
         stubFor(get(urlEqualTo("/npmfolder/anicosnpm4/1.0.1/anicosnpm4-1.0.1.tgz"))
                 .willReturn(aResponse()

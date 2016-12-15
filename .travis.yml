@@ -8,6 +8,8 @@ addons:
         branches:
           - master
           - sonar
+        github_token:
+              secure: "$GIT_HUB"
 jdk:
   - oraclejdk8
 before_script:

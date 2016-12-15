@@ -5,6 +5,9 @@ addons:
     sonarqube:
         token:
           secure: "$SONAR_TOKEN"
+        branches:
+          - master
+          - sonar
 jdk:
   - oraclejdk8
 before_script:

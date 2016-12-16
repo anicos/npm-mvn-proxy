@@ -9,15 +9,24 @@ import org.springframework.stereotype.Component;
 @Component
 public class ObjectMapperWrapper {
     private final ObjectMapper objectMapper;
+    private final ObjectMapperValidator objectMapperValidator;
 
     @Autowired
-    public ObjectMapperWrapper(ObjectMapper objectMapper) {
+    public ObjectMapperWrapper(ObjectMapper objectMapper, ObjectMapperValidator objectMapperValidator) {
         this.objectMapper = objectMapper;
+        this.objectMapperValidator = objectMapperValidator;
     }
 
     public <T> T treeToValue(ObjectNode jsonNodes, Class<T> clazz) {
+        T result = treeToValueWithoutValidation(jsonNodes, clazz);
+        objectMapperValidator.validate(result);
+        return result;
+    }
+
+    private <T> T treeToValueWithoutValidation(ObjectNode jsonNodes, Class<T> clazz) {
         try {
-            return objectMapper.treeToValue(jsonNodes, clazz);
+            T result = objectMapper.treeToValue(jsonNodes, clazz);
+            return result;
         } catch (JsonProcessingException e) {
             throw new JsonProcessingRuntimeException("Can't parse bode of response", e);
         }

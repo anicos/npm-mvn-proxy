@@ -65,26 +65,4 @@ class NpmPublishControllerSpec extends Specification {
         response.status == HttpStatus.BAD_REQUEST.value()
         0 * artifatoryPublisher.publish(_ as ArtifactoryModel)
     }
-
-    def 'sholud return 400 when body object is not valid '() {
-        expect:
-        def content = new File(getClass().getResource(jsonFile).toURI()).getText('UTF-8')
-        def response = mvc.perform(
-                put('/name')
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(content)
-        ).andReturn().response
-
-        response.status == HttpStatus.BAD_REQUEST.value()
-
-        where:
-        jsonFile << [
-                'withoutId.json',
-                'withoutDistTags.json',
-                'withoutDistTagsLatest.json',
-                'withoutAttachments.json',
-                'withTooMuchAttachments.json',
-                'withoutContentTypeInAttachments.json',
-                'withoutDataInAttachments.json']
-    }
 }

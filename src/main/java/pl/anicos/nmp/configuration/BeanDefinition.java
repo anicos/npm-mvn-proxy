@@ -11,6 +11,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import javax.servlet.Filter;
+import javax.validation.Validation;
+import javax.validation.Validator;
+import javax.validation.ValidatorFactory;
 import java.util.Base64;
 
 @EnableWebMvc
@@ -53,5 +56,11 @@ public class BeanDefinition {
         registration.setFilter(requestDumperFilter);
         registration.addUrlPatterns("/*");
         return registration;
+    }
+
+    @Bean
+    public Validator validator() {
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        return factory.getValidator();
     }
 }

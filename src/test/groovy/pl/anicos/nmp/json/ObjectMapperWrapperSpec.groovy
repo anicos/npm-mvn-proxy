@@ -5,11 +5,14 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.databind.node.ObjectNode
 import spock.lang.Specification
 
+import javax.validation.Validation
+import javax.validation.ValidatorFactory
 
 class ObjectMapperWrapperSpec extends Specification {
     ObjectMapper objectMapper = Mock()
-
-    ObjectMapperWrapper testObj = new ObjectMapperWrapper(objectMapper)
+    ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+    ObjectMapperValidator objectMapperValidator = new ObjectMapperValidator(factory.getValidator())
+    ObjectMapperWrapper testObj = new ObjectMapperWrapper(objectMapper, objectMapperValidator)
 
     ObjectNode jsonNodes = Mock()
 

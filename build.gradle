@@ -14,14 +14,13 @@ buildscript {
         classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.2.1"
     }
 }
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'org.springframework.boot'
-apply plugin: 'groovy'
-apply plugin: 'jacoco'
-apply plugin: "org.sonarqube"
-
+plugins {
+    id 'java'
+    id "org.springframework.boot" version "1.4.2.RELEASE"
+    id 'groovy'
+    id 'jacoco'
+    id "org.sonarqube" version "2.2.1"
+}
 
 jar {
     baseName = 'npm-mvn-proxy'

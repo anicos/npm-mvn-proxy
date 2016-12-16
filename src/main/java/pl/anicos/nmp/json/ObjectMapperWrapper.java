@@ -25,8 +25,7 @@ public class ObjectMapperWrapper {
 
     private <T> T treeToValueWithoutValidation(ObjectNode jsonNodes, Class<T> clazz) {
         try {
-            T result = objectMapper.treeToValue(jsonNodes, clazz);
-            return result;
+            return objectMapper.treeToValue(jsonNodes, clazz);
         } catch (JsonProcessingException e) {
             throw new JsonProcessingRuntimeException("Can't parse bode of response", e);
         }

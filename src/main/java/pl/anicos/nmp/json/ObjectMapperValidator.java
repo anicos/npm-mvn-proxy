@@ -20,7 +20,7 @@ public class ObjectMapperValidator {
 
     public <T> void validate(T t) {
         Set<ConstraintViolation<T>> violations = validator.validate(t);
-        if (violations.size() > 0) {
+        if (!violations.isEmpty()) {
             StringBuilder message = new StringBuilder();
             violations.forEach(a -> message.append(a.toString()));
 

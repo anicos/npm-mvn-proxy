@@ -12,6 +12,7 @@ import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NpmPublishBody {
+
     @NotEmpty
     private final String id;
     @NotNull

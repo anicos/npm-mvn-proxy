@@ -5,9 +5,6 @@ addons:
     sonarqube:
         token:
           secure: "$SONAR_TOKEN"
-        branches:
-          - master
-          - sonar
         github_token:
               secure: "$GIT_HUB"
 jdk:

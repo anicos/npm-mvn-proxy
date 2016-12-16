@@ -9,7 +9,7 @@ import spock.lang.Specification
 class ArtifactoryUrlProviderSpec extends Specification {
 
     ApplicationProperties applicationProperties = Stub();
-    ArtifactoryUrlProvider testObj = new ArtifactoryUrlProvider(applicationProperties)
+    ArtifactoryUrlProvider testObj = new ArtifactoryUrlProvider(applicationProperties, new VersionNumberExtractor())
 
     def "should provide url to artifact in artifactory"() {
         given:

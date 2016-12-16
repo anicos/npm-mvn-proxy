@@ -6,9 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/**
- * Created by anicos on 9/6/16.
- */
 @Component
 public class MetadataCreator {
 
@@ -22,13 +19,13 @@ public class MetadataCreator {
 
     public ObjectNode create(ObjectNode objectNode) {
         logger.info("Create existing metadata.json");
-        objectNode = metadataJsonUtil.initDefaultValues(objectNode);
-        String latest = metadataJsonUtil.getLastVersion(objectNode);
-        metadataJsonUtil.updateLatestTarball(objectNode);
+        ObjectNode newNode = metadataJsonUtil.initDefaultValues(objectNode);
+        String latest = metadataJsonUtil.getLastVersion(newNode);
+        metadataJsonUtil.updateLatestTarball(newNode);
 
-        addTimeObject(objectNode, latest);
+        addTimeObject(newNode, latest);
 
-        return objectNode;
+        return newNode;
     }
 
     private void addTimeObject(ObjectNode objectNode, String latest) {

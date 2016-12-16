@@ -3,7 +3,6 @@ package pl.anicos.nmp.authentication.token;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import pl.anicos.nmp.artifactory.ArtifactChecker;
-import pl.anicos.nmp.artifactory.exceptions.UnauthorizedException;
 import pl.anicos.nmp.artifactory.model.ArtifactoryLocation;
 import pl.anicos.nmp.artifactory.model.ArtifactoryLocationBuilder;
 import pl.anicos.nmp.configuration.ApplicationProperties;
@@ -19,7 +18,7 @@ public class TokenVerifier {
         this.applicationProperties = applicationProperties;
     }
 
-    public void tryLoginToArtifact(String token) throws UnauthorizedException {
+    public void tryLoginToArtifact(String token) {
         ArtifactoryLocation artifactoryLocation = new ArtifactoryLocationBuilder()
                 .setUrl(applicationProperties.getMavenRepoUrl())
                 .setAuthorizationHeader(token)

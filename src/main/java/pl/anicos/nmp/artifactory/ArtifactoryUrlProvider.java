@@ -14,18 +14,21 @@ public class ArtifactoryUrlProvider {
     public static final String SLASH = "/";
     public static final String SUPER_PACKAGE_JSON = "superPackage.json";
     private final ApplicationProperties applicationProperties;
+    private final VersionNumberExtractor versionNumberExtractor;
 
 
     @Autowired
-    public ArtifactoryUrlProvider(ApplicationProperties applicationProperties) {
+    public ArtifactoryUrlProvider(ApplicationProperties applicationProperties, VersionNumberExtractor versionNumberExtractor) {
         this.applicationProperties = applicationProperties;
+        this.versionNumberExtractor = versionNumberExtractor;
     }
 
     public String getUrlToAtrtifact(NpmPublishBody npmPublishBody) {
         Map<String, Attachment> attachments = npmPublishBody.getAttachments();
-        String binaryName = attachments.keySet().stream().findFirst().get();
+        String binaryName = versionNumberExtractor.getVersionNumber(attachments);
         return getUrlToAtrtifact(npmPublishBody.getId(), binaryName, npmPublishBody.getDistTags().getLatest());
     }
+
 
     public String getUrlToAtrtifact(String id, String binaryName, String vesion) {
         return applicationProperties.getMavenRepoUrl()

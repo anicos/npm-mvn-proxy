@@ -1,12 +1,18 @@
 language: java
+dist: trusty
 addons:
     srcclr: true
+    sonarqube:
+        token:
+          secure: "$SONAR_TOKEN"
+        github_token:
+              secure: "$GIT_HUB"
 jdk:
   - oraclejdk8
 before_script:
   chmod 777 gradlew
 script:
-  ./gradlew clean build checkCoverage --debug
+  ./gradlew clean build checkCoverage sonarqube
 after_success:
   - bash <(curl -s https://codecov.io/bash)
 deploy:

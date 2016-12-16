@@ -12,6 +12,7 @@ import java.util.Map;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class NpmPublishBody {
+
     @NotEmpty
     private final String id;
     @NotNull
@@ -21,9 +22,6 @@ public class NpmPublishBody {
     @Size(max = 1)
     @Valid
     private final Map<String, Attachment> attachments;
-
-    @NotEmpty
-    @Valid
 
     @JsonCreator
     public NpmPublishBody(@JsonProperty("_id") String id, @JsonProperty("dist-tags") DistTags distTags, @JsonProperty("_attachments") Map<String, Attachment> attachments) {

@@ -25,7 +25,7 @@ plugins {
 jar {
     baseName = 'npm-mvn-proxy'
     archiveName = 'npm-mvn-proxy.jar'
-    version = '1.0.0'
+    version = '1.0.1'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
@@ -67,13 +67,15 @@ jacocoTestReport {
     }
 }
 
-task checkCoverage << {
-    def report = getRaport()
-    def currentLevelOfCoverage = calculatePercentCoverage(report)
+task checkCoverage {
+    doLast {
+        def report = getRaport()
+        def currentLevelOfCoverage = calculatePercentCoverage(report)
 
-    println "The current level of coverage is [${currentLevelOfCoverage}%]"
-    if (currentLevelOfCoverage < expectedCoverageLevel) {
-        throw new GradleException("The current level of coverage [${currentLevelOfCoverage}%] is lower than expected [{$expectedCoverageLevel}%]")
+        println "The current level of coverage is [${currentLevelOfCoverage}%]"
+        if (currentLevelOfCoverage < expectedCoverageLevel) {
+            throw new GradleException("The current level of coverage [${currentLevelOfCoverage}%] is lower than expected [{$expectedCoverageLevel}%]")
+        }
     }
 }
 
@@ -92,4 +94,8 @@ Double calculatePercentCoverage(GPathResult report) {
     def covered = report.counter[0].@covered.toInteger()
     def all = missed + covered
     return covered * 100 / all
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.3'
 }

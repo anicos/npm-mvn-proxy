@@ -2,7 +2,7 @@ import groovy.util.slurpersupport.GPathResult
 
 buildscript {
     ext {
-        springBootVersion = '1.4.2.RELEASE'
+        springBootVersion = '1.4.3.RELEASE'
     }
     repositories {
         mavenCentral()
@@ -16,7 +16,7 @@ buildscript {
 }
 plugins {
     id 'java'
-    id "org.springframework.boot" version "1.4.2.RELEASE"
+    id "org.springframework.boot" version "1.4.3.RELEASE"
     id 'groovy'
     id 'jacoco'
     id "org.sonarqube" version "2.2.1"

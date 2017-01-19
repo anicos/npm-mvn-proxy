@@ -18,11 +18,12 @@ public class NpmErrorAttributes extends DefaultErrorAttributes {
             boolean includeStackTrace) {
         Map<String, Object> errorAttributes = super.getErrorAttributes(requestAttributes, includeStackTrace);
         Throwable error = getError(requestAttributes);
+        if (error != null){
+            String message = error.getMessage();
+            errorAttributes.put("error", message);
+        }
 
-        String message = error.getMessage();
-        logger.warn("Error " + message);
-
-        errorAttributes.put("error", message);
+        logger.warn("Error " + errorAttributes.toString());
         return errorAttributes;
     }
 }

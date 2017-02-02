@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/anicos/npm-mvn-proxy.svg?branch=master)](https://travis-ci.org/anicos/npm-mvn-proxy)
+[![codecov](https://codecov.io/gh/anicos/npm-mvn-proxy/branch/master/graph/badge.svg?maxAge=0)](https://codecov.io/gh/anicos/npm-mvn-proxy)
+
+
 # Npm-mvn-proxy
 The Npm-mvn-proxy provides easy way to publish and download javaScript projects using [Artifactory][] Maven repository.
 This is simple proxy between [Npm][] console and [Artifactory][].
